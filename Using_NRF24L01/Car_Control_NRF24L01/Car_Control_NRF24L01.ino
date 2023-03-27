@@ -5,15 +5,25 @@
 
 #define ENA   3
 #define IN_1  4
-#define IN_2  8  //5->8
+#define IN_2  5  
 #define IN_3  6
 #define IN_4  7
-#define ENB   5 //8->5
+#define ENB   8
+#define Sv1 14 // A0
+#define Sv2 15 // A1
+#define Sv3 16 // A2
+#define Sv4 17 // A3
 
-#define Sv1 19 // A5
-#define Sv2 16 // A2
-#define Sv3 17 // A3
-#define Sv4 14 // A0
+// #define ENA   3
+// #define IN_1  4
+// #define IN_2  8  //5->8
+// #define IN_3  6
+// #define IN_4  7
+// #define ENB   5 //8->5
+// #define Sv1 19 // A5
+// #define Sv2 16 // A2
+// #define Sv3 17 // A3
+// #define Sv4 14 // A0
 
 Servo servo1, servo2, servo3, servo4;
 
@@ -146,30 +156,6 @@ void dataControl() {
   if (radio.available()) {
     radio.read(&data, sizeof(Mydata));
   }
-  //  Serial.print(data.val_vr1);
-  //  Serial.print("\t");
-  //  Serial.print(data.val_vr2);
-  //  Serial.print("\t");
-  //  Serial.print(data.val_vr3);
-  //  Serial.print("\t");
-  //  Serial.print(data.val_vr4);
-  //  Serial.print("\t");
-  //  Serial.print(data.val_vrX1);
-  //  Serial.print("\t");
-  //  Serial.print(data.val_vrY1);
-  //  Serial.print("\t");
-  //  Serial.print(data.val_vrX2);
-  //  Serial.print("\t");
-  //  Serial.print(data.val_vrY2);
-  //  Serial.print("\t");
-  //  Serial.print(data.val_bt1);
-  //  Serial.print("\t");
-  //  Serial.print(data.val_bt2);
-  //  Serial.print("\t");
-  //  Serial.print(data.val_bt3);
-  //  Serial.print("\t");
-  //  Serial.print(data.val_bt4);
-  //  Serial.print("\n");
   speedCar = data.val_vr4;
   servo1.write(data.val_vr1);
   servo2.write(data.val_vr2);
