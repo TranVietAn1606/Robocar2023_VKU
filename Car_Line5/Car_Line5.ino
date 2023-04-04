@@ -1,6 +1,8 @@
+/*Author: TranVietAn1606
+  Contact: tvan.19ce@vku.udn.vn
+*/
 #include "func.h"
-//[390 50 30 10], [390 50 30 10]
-int sp = 390;
+int sp = 430;
 byte s1 = 50, s2 = 30, s3 = 10;
 void setup() {
   pinMode(ENA, OUTPUT);
@@ -72,14 +74,5 @@ void loop() {
       turnLeft(sp + s1);
       delay(50);
       break;
-//    case 12:
-//      Serial.println("Left 1+2+3");
-//      turnRight(sp + s1);
-//      delay(50);
-//      break;
-      //      case 13:
-      //        Serial.println("Left 1+2+3");
-      //        goAheadLeft(spL - s2);
-      //        break;
   }
 }
