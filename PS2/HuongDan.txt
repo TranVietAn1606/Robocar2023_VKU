@@ -1,0 +1,39 @@
+CÁC LỆNH ĐỌC TÍN HIỆU TỪ PS2 ĐỂ ĐIỀU KHIỂN BẰNG TAY CẦM PS2
+nút selest: PSB_SELECT
+nút start: PSB_START
+nút l1 : PSB_L1
+nút l2 : PSB_L2
+nút R1 : PSB_R1
+nút R2 : PSB_R2
+
+4 nút bên trái
+trên: PSB_PAD_UP
+dưới: PSB_PAD_DPWN
+trái: PSB_PAD_LEFT 
+phải: PSB_PAD_RIGHT
+
+4 nút bên phải:
+tam giác: PSB_GREEN/PSB_TRIANGLE
+X: PAB_BLUE/ PSB_CROSS
+tròn: PSB_RED/PSB_CRICLE
+vuông: PSB_PINK/ PSB_SQUARE
+
+2 nút giữa:
+trái: PSS_LY, PSS_LX, PSB_L3
+phải: PSS_LY, PSS_LX, PSB_R3
+
+
+NẠP THƯ VIỆN PS2X VÀO ARDUINO
+sớ đồ lắp đặt:
+chân vss ->5v
+chân gnd ->gnd
+data ->A5
+cmd ->A4
+cs ->A3
+clk ->A2
+(Nếu thay đổi thì khai báo lại các chân trong chương trình)
+
+copy chương trình
+Chọn đúng cổng Com và nạp ct vào
+//tìm hiểu về arduino và cách lập trình, hiểu được các dòng lệnh kết nối
+và trường hợp báo lỗi không kết nối đc 
